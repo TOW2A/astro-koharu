@@ -1,1 +1,14 @@
-{}
+{
+  "environment-configuration": {
+    "title": "环境配置",
+    "summary": "文章介绍了在Windows 10及以上系统上搭建适合C/C++、Golang和Node.js开发的基础环境，包括配置VScode+Vim编辑器组合、设置基础终端环境（如安装Windows Terminal）、配置包管理器（如Scoop）以及安装常见开发工具的过程。"
+  },
+  "hello-world": {
+    "title": "Hello World",
+    "summary": "作者写下这篇随笔作为开头，表达了对读者的问候。"
+  },
+  "credits": {
+    "title": "鸣谢与版权声明",
+    "summary": "该文章感谢多名创作者提供的视觉支持，并公布了站点使用的技术框架和托管方式；同时提供了联系方式以处理素材移除请求。"
+  }
+}
