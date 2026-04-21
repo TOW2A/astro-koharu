@@ -15,7 +15,7 @@ site:
   alternate: TOW # 网站英文名称 用于页脚、Logo、@ handle 等
   subtitle: # 网站副标题
   name: TOW2A # 作者名称 - 请修改为你的名字
-  description: 一个基于 Astro 的现代化博客主题 # 网站描述
+  description: 一枚重型反坦克导弹的博客 # 网站描述
   avatar: /img/avatar.webp # 网站头像
   showLogo: false # 是否显示 Logo
   author: TOW2A # 作者名称 - 请修改为你的名字
@@ -60,8 +60,8 @@ i18n:
 categoryMap:
   # Primary categories
   随笔: life
-  # 笔记: note
-  # 工具: tools
+  笔记: note
+  工具: tools
   # 周刊: weekly
   # Secondary categories (for nested paths)
   # 前端: front-end
@@ -87,18 +87,18 @@ featuredCategories:
     label: 随笔
     image: /img/cover/1.webp
     description: 生活记录、随想随笔
-  # - link: note # 对应 categoryMap 中 笔记: note
-  #   label: 笔记
-  #   image: /img/cover/4.webp
-  #   description: 技术笔记、学习笔记
+  - link: note # 对应 categoryMap 中 笔记: note
+    label: 笔记
+    image: /img/cover/4.webp
+    description: 技术笔记、学习笔记
   # - link: note/front-end # 嵌套分类：笔记/前端
   #   label: 前端
   #   image: /img/cover/1.webp
   #   description: 前端技术相关
-  # - link: tools # 对应 categoryMap 中 工具: tools
-  #   label: 工具
-  #   image: /img/cover/11.webp
-  #   description: 工具使用、效率提升
+  - link: tools # 对应 categoryMap 中 工具: tools
+    label: 工具
+    image: /img/cover/4.webp
+    description: 工具使用、效率提升
   - link: credits
     label: 鸣谢
     image: /img/cover/2.webp
@@ -523,8 +523,8 @@ comment:
     pageSize: 10 # 每页评论数 (默认: 10)
     imageUploader: false # 图片上传功能 (默认: false)
     highlighter: true # 代码高亮 (默认: true)
-    texRenderer: false # LaTeX 渲染 (默认: false)
-    search: false # 搜索功能 (默认: false)
+    texRenderer: true # LaTeX 渲染 (默认: false)
+    search: true # 搜索功能 (默认: false)
     reaction: false # 文章反应功能 (默认: false)
     #                                    # 可选: true | false | 字符串数组 (自定义反应图标)
     emoji: true # 表情包配置 (默认: ['//unpkg.com/@waline/emojis@1.2.0/weibo'])
@@ -640,19 +640,19 @@ christmas:
 #     - icon: Iconify 图标标识（可从 https://icon-sets.iconify.design/ 中搜寻）
 #     - urlTemplate: URL 模板，支持占位符 {path}（文件绝对路径）
 # -----------------------------------------------------------------------------
-dev:
-  localProjectPath: "/Users/yourname/path/to/astro-koharu" # 请修改为你的项目绝对路径
-  contentRelativePath: "src/content/blog"
-  editors:
-    - id: vscode
-      name: VS Code
-      icon: devicon-plain:vscode
-      urlTemplate: "vscode://file/{path}"
-    # - id: cursor
-    #   name: Cursor
-    #   icon: simple-icons:cursor
-    #   urlTemplate: 'cursor://file/{path}'
-    # - id: zed
-    #   name: Zed
-    #   icon: simple-icons:zedindustries
-    #   urlTemplate: 'zed://file/{path}'
+# dev:
+#   localProjectPath: "/Users/yourname/path/to/astro-koharu" # 请修改为你的项目绝对路径
+#   contentRelativePath: "src/content/blog"
+#   editors:
+#     - id: vscode
+#       name: VS Code
+#       icon: devicon-plain:vscode
+#       urlTemplate: "vscode://file/{path}"
+# - id: cursor
+#   name: Cursor
+#   icon: simple-icons:cursor
+#   urlTemplate: 'cursor://file/{path}'
+# - id: zed
+#   name: Zed
+#   icon: simple-icons:zedindustries
+#   urlTemplate: 'zed://file/{path}'
